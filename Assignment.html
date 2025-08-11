@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Multi-Section Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+      margin: 10px;
+    }
+    header {
+      background: #004080;
+      color: white;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav li {
+      display: inline;
+      margin-right: 15px;
+    }
+    nav a {
+      color: #004080;
+      text-decoration: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: inline-block;
+      margin-top: 8px;
+    }
+    input, select, textarea {
+      display: block;
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #f4f4f4;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>My Multi-Section Web Page</h1>
+    <p>A simple example with lists, tables, media, and a form</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#form">Form</a></li>
+    </ul>
+  </nav>
+
+  <!-- Lists Section -->
+  <section id="lists">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Graphic Design</li>
+      <li>SEO Optimization</li>
+    </ul>
+
+    <h3>Project Steps (Ordered List)</h3>
+    <ol>
+      <li>Requirement Gathering</li>
+      <li>Design and Prototyping</li>
+      <li>Development</li>
+      <li>Testing and Deployment</li>
+    </ol>
+  </section>
+
+  <!-- Tables Section -->
+  <section id="tables">
+    <h2>Pricing Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Duration</th>
+          <th>Price (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Website Design</td>
+          <td>2 weeks</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>SEO Package</td>
+          <td>1 month</td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>Branding</td>
+          <td>3 weeks</td>
+          <td>400</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section id="media">
+    <h2>Our Work in Action</h2>
+    <p>Watch a short clip of our design process:</p>
+    <video controls width="400">
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <p>Or listen to our team introduction:</p>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form">
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Project Details</legend>
+        <label for="service">Service Interested In:</label>
+        <select id="service" name="service" required>
+          <option value="">--Please choose an option--</option>
+          <option value="web">Web Development</option>
+          <option value="design">Graphic Design</option>
+          <option value="seo">SEO Optimization</option>
+        </select>
+
+        <label for="budget">Estimated Budget (USD):</label>
+        <input type="number" id="budget" name="budget" min="100" max="10000" required>
+
+        <label for="startdate">Preferred Start Date:</label>
+        <input type="date" id="startdate" name="startdate" required>
+
+        <label for="details">Project Details:</label>
+        <textarea id="details" name="details" rows="4" minlength="10" required></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Options</legend>
+        <label><input type="checkbox" name="newsletter"> Subscribe to Newsletter</label>
+        <label><input type="radio" name="contactmethod" value="email" required> Contact by Email</label>
+        <label><input type="radio" name="contactmethod" value="phone"> Contact by Phone</label>
+      </fieldset>
+
+      <input type="submit" value="Submit Form">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Multi-Section Web Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
